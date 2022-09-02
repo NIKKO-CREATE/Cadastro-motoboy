@@ -24,7 +24,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseAuthorization();
-//app.MapRazorPages();
+app.MapRazorPages();
 
 //app.UseEndpoints(endpoints =>
 //{

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CadastroMotoboy.Controller
 {
+    [Route("api/V1/[controller]")]
     [ApiController]
     public class FuncionarioController : ControllerBase
     {
@@ -18,11 +19,11 @@ namespace CadastroMotoboy.Controller
         }
 
         // GET: FuncionarioController
-        //[HttpGet]
-        //public async Task<IActionResult> Index()
-        //{
-        //    return (IActionResult)await _context.Funcionarios.ToListAsync(); 
-        //}
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+            return (IActionResult)await _context.Funcionarios.ToListAsync();
+        }
 
         // GET: FuncionarioController/Details/5
         [HttpGet]
